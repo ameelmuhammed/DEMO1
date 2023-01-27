@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D876215E-402A-4450-86F8-9ADC39D96743}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>sysbizzdemo</RootNamespace>
+    <AssemblyName>sysbizzdemo</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net45\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addbrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addbrand.Designer.cs">
+      <DependentUpon>addbrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addcat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addcat.Designer.cs">
+      <DependentUpon>addcat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addgroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addgroup.Designer.cs">
+      <DependentUpon>addgroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="additem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="additem.Designer.cs">
+      <DependentUpon>additem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="coustomer master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coustomer master.Designer.cs">
+      <DependentUpon>coustomer master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="democlass.cs" />
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="item master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="item master.Designer.cs">
+      <DependentUpon>item master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLU Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLU Details.Designer.cs">
+      <DependentUpon>PLU Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sales.Designer.cs">
+      <DependentUpon>sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet.cs">
+      <DependentUpon>sysbizzdemoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet7.cs">
+      <DependentUpon>sysbizzdemoDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysbizzdemoDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysbizzdemoDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="viewbrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewbrand.Designer.cs">
+      <DependentUpon>viewbrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewcat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewcat.Designer.cs">
+      <DependentUpon>viewcat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewgroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewgroup.Designer.cs">
+      <DependentUpon>viewgroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewitem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewitem.Designer.cs">
+      <DependentUpon>viewitem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addbrand.resx">
+      <DependentUpon>addbrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addcat.resx">
+      <DependentUpon>addcat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addgroup.resx">
+      <DependentUpon>addgroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="additem.resx">
+      <DependentUpon>additem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coustomer master.resx">
+      <DependentUpon>coustomer master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="item master.resx">
+      <DependentUpon>item master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLU Details.resx">
+      <DependentUpon>PLU Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="sales.resx">
+      <DependentUpon>sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewbrand.resx">
+      <DependentUpon>viewbrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewcat.resx">
+      <DependentUpon>viewcat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewgroup.resx">
+      <DependentUpon>viewgroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewitem.resx">
+      <DependentUpon>viewitem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="sysbizzdemoDataSet.xsc">
+      <DependentUpon>sysbizzdemoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet.xss">
+      <DependentUpon>sysbizzdemoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet1.xsc">
+      <DependentUpon>sysbizzdemoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet1.xss">
+      <DependentUpon>sysbizzdemoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet10.xsc">
+      <DependentUpon>sysbizzdemoDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet10.xss">
+      <DependentUpon>sysbizzdemoDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet11.xsc">
+      <DependentUpon>sysbizzdemoDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet11.xss">
+      <DependentUpon>sysbizzdemoDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet12.xsc">
+      <DependentUpon>sysbizzdemoDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet12.xss">
+      <DependentUpon>sysbizzdemoDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet13.xsc">
+      <DependentUpon>sysbizzdemoDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet13.xss">
+      <DependentUpon>sysbizzdemoDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet14.xsc">
+      <DependentUpon>sysbizzdemoDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet14.xss">
+      <DependentUpon>sysbizzdemoDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet15.xsc">
+      <DependentUpon>sysbizzdemoDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet15.xss">
+      <DependentUpon>sysbizzdemoDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet16.xsc">
+      <DependentUpon>sysbizzdemoDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet16.xss">
+      <DependentUpon>sysbizzdemoDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet17.xsc">
+      <DependentUpon>sysbizzdemoDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet17.xss">
+      <DependentUpon>sysbizzdemoDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet18.xsc">
+      <DependentUpon>sysbizzdemoDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet18.xss">
+      <DependentUpon>sysbizzdemoDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet19.xsc">
+      <DependentUpon>sysbizzdemoDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet19.xss">
+      <DependentUpon>sysbizzdemoDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet2.xsc">
+      <DependentUpon>sysbizzdemoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet2.xss">
+      <DependentUpon>sysbizzdemoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet20.xsc">
+      <DependentUpon>sysbizzdemoDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet20.xss">
+      <DependentUpon>sysbizzdemoDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet21.xsc">
+      <DependentUpon>sysbizzdemoDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet21.xss">
+      <DependentUpon>sysbizzdemoDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet22.xsc">
+      <DependentUpon>sysbizzdemoDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet22.xss">
+      <DependentUpon>sysbizzdemoDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet23.xsc">
+      <DependentUpon>sysbizzdemoDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet23.xss">
+      <DependentUpon>sysbizzdemoDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet24.xsc">
+      <DependentUpon>sysbizzdemoDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet24.xss">
+      <DependentUpon>sysbizzdemoDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet25.xsc">
+      <DependentUpon>sysbizzdemoDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet25.xss">
+      <DependentUpon>sysbizzdemoDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet26.xsc">
+      <DependentUpon>sysbizzdemoDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet26.xss">
+      <DependentUpon>sysbizzdemoDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet27.xsc">
+      <DependentUpon>sysbizzdemoDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet27.xss">
+      <DependentUpon>sysbizzdemoDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet3.xsc">
+      <DependentUpon>sysbizzdemoDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet3.xss">
+      <DependentUpon>sysbizzdemoDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet4.xsc">
+      <DependentUpon>sysbizzdemoDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet4.xss">
+      <DependentUpon>sysbizzdemoDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet5.xsc">
+      <DependentUpon>sysbizzdemoDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet5.xss">
+      <DependentUpon>sysbizzdemoDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet6.xsc">
+      <DependentUpon>sysbizzdemoDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet6.xss">
+      <DependentUpon>sysbizzdemoDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet7.xsc">
+      <DependentUpon>sysbizzdemoDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet7.xss">
+      <DependentUpon>sysbizzdemoDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet8.xsc">
+      <DependentUpon>sysbizzdemoDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet8.xss">
+      <DependentUpon>sysbizzdemoDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet9.xsc">
+      <DependentUpon>sysbizzdemoDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="sysbizzdemoDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysbizzdemoDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysbizzdemoDataSet9.xss">
+      <DependentUpon>sysbizzdemoDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
